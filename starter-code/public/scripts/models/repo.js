@@ -15,16 +15,16 @@ var app = app || {};
       url: 'https://api.github.com/users/alecmac/repos',
       method: 'GET',
       headers: {
-        ///auhtorization: token stuff goes here
+        'Authorization': `token ${githubToken}`
       }
     })
-    .then(results => {
-      results.forEach(repo => repos.all.push(repo));
-      console.log(repos.all);
-      // callback();
-    }, error => {
-      console.log(error);
-    })
+      .then(results => {
+        results.forEach(repo => repos.all.push(repo));
+        console.log(repos.all);
+        callback();
+      }, error => {
+        console.log(error);
+      }); 
   };
 
   // REVIEW: Model method that filters the full collection for repos with a particular attribute.
