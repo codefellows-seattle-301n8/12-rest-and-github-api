@@ -19,7 +19,8 @@ var app = app || {};
     })
       .then(results => {
         console.log('hi from results');
-        console.log(results);
+        repos.all = results
+        callback();
       }, error => {
         console.log(error);
       })
