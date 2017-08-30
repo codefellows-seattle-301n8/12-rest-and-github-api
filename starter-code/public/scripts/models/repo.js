@@ -12,7 +12,7 @@ var app = app || {};
     //       being an array with a bunch of repo objects in it, so you'll need to
     //       populate it with the response from Github before you call the callback.
     $.ajax({
-      url: 'https://api.github.com/users/alecmac/repos',
+      url: 'https://api.github.com/users/codefellows/repos',
       method: 'GET',
       headers: {
         'Authorization': `token ${githubToken}`

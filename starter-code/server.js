@@ -28,6 +28,10 @@ app.get('/articles', (request, response) => {
   .catch(console.error);
 });
 
+app.get('/*', function(there, backAgain) {
+  backAgain.sendFile('index.html', {root: './public'});
+});
+
 app.post('/articles', function(request, response) {
   client.query(
     'INSERT INTO authors(author, "authorUrl") VALUES($1, $2) ON CONFLICT DO NOTHING',
