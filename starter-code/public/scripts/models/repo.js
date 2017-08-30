@@ -20,7 +20,8 @@ var app = app || {};
     })
     .then(results => {
       results.forEach(repo => repos.all.push(repo));
-      callback();
+      console.log(repos.all);
+      // callback();
     }, error => {
       console.log(error);
     })
