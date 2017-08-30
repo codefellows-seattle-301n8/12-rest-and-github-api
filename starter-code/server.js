@@ -1,5 +1,5 @@
 'use strict';
-var kilovoltPW = 'T@coSal1d';
+
 const pg = require('pg');
 const fs = require('fs');
 const express = require('express');
