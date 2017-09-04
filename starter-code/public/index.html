@@ -26,29 +26,31 @@
       </article>
     </script>
 
-    <!-- TODO: We have a new Handlebars template! Help fill in a few expressions: -->
     <script id="repo-template" type="text/x-handlebars-template">
       <li>
         <a href="{{html_url}}" target="_blank">
-          <h3>{{name}}</h3>
-        </a>
-        <p>Description: {{description}}</p>
-        <p>Language: {{language}}</p>
-        <p>Created: {{created_at}}</p>
-        <p>Last updated: {{updated_at}}</p>
-        {{#if watchers_count}}
-          <p>{{watchers_count}} viewing this page</p>
-        {{/if}}
-      </li>
-      </script>
+         <h3>{{}}</h3>
+         <h2>Repo Name: {{name}}</h2>
+       </a>
+       <p>Description: {{}}</p>
+       <p>Language: {{}}</p>
+       <p>Created: {{}}</p>
+       <p>Last updated: {{}}</p>
+       {{#if watchers_count}}
+         <p>{{watchers_count}} watching this repo</p>
+       {{/if}}
+       <p>Git ID: {{id}}</p>
+     </li>
+   </script>
+
   </head>
   <body>
     <header class="site-header clearfix">
       <section class="heading-group-h1">
         <h1>
-          Kilovolt Blog!
+          Yo mamma's blog!
         </h1>
-        <h2>The shocking power of static pages</h2>
+        <h2>The shocking power of yo mamma</h2>
       </section>
       <nav class="main-nav">
         <div class="icon-menu"></div>
@@ -84,9 +86,9 @@
         <section>
           <h1>Some of my intrests:</h1>
           <ul>
-            <li>Coding</li>
+            <li>My mamma</li>
             <li>Sharing what I've learned</li>
-            <li>Hanging with my family</li>
+            <li>Hanging with my mamma</li>
           </ul>
         </section>
       </section>
@@ -102,7 +104,7 @@
     <script src="/vendor/scripts/page.js"></script>
 
     <!-- Your secret GitHub token file should be added into your .gitignore file, therefore recreated on every developer's environment. -->
-    <
+
     <script src="/scripts/models/githubToken.js"></script>
 
     <!-- Script files for the Article resource: -->
